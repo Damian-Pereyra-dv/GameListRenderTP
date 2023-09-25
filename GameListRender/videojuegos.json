@@ -1,0 +1,76 @@
+{
+    "cantidad": 10,
+    "videojuegos": [
+      {
+        "id": "1",
+        "nombre": "The Legend of Zelda: Breath of the Wild",
+        "genero": "Aventura",
+        "plataforma": "Nintendo Switch",
+        "imagen": "https://onlygames.com.ar/wp-content/uploads/2022/03/the-legend-of-zelda-breath-of-the-wild-switch-hero.jpg"
+      },
+      {
+        "id": "2",
+        "nombre": "Red Dead Redemption 2",
+        "genero": "Acción y Aventura",
+        "plataforma": "PlayStation 4",
+        "imagen": "https://www.rockstargames.com/reddeadredemption2/assets/img/home/screenshot_01.jpg"
+      },
+      {
+        "id": "3",
+        "nombre": "The Witcher 3: Wild Hunt",
+        "genero": "Rol",
+        "plataforma": "PC",
+        "imagen": "https://thewitcher.com/assets/img/home/screenshot_01.jpg"
+      },
+      {
+        "id": "4",
+        "nombre": "Super Mario Odyssey",
+        "genero": "Plataformas",
+        "plataforma": "Nintendo Switch",
+        "imagen": "https://www.nintendo.com/games/detail/super-mario-odyssey-switch/"
+      },
+      {
+        "id": "5",
+        "nombre": "Dark Souls III",
+        "genero": "Acción y Rol",
+        "plataforma": "Xbox One",
+        "imagen": "https://www.darksouls.jp/assets/img/home/screenshot_01.jpg"
+      },
+      {
+        "id": "6",
+        "nombre": "Minecraft",
+        "genero": "Sandbox",
+        "plataforma": "PC",
+        "imagen": "https://www.minecraft.net/es-es/assets/img/home/screenshot_01.jpg"
+      },
+      {
+        "id": "7",
+        "nombre": "Grand Theft Auto V",
+        "genero": "Acción y Aventura",
+        "plataforma": "PlayStation 5",
+        "imagen": "https://www.rockstargames.com/grandtheftautov/assets/img/home/screenshot_01.jpg"
+      },
+      {
+        "id": "8",
+        "nombre": "Fortnite",
+        "genero": "Battle Royale",
+        "plataforma": "Xbox Series X",
+        "imagen": "https://www.epicgames.com/fortnite/es-ES/home/"
+      },
+      {
+        "id": "9",
+        "nombre": "Cyberpunk 2077",
+        "genero": "Rol",
+        "plataforma": "PC",
+        "imagen": "https://www.cyberpunk.net/es/assets/img/home/screenshot_01.jpg"
+      },
+      {
+        "id": "10",
+        "nombre": "Animal Crossing: New Horizons",
+        "genero": "Simulación",
+        "plataforma": "Nintendo Switch",
+        "imagen": "https://www.nintendo.com/games/detail/animal-crossing-new-horizons-switch/"
+      }
+    ],
+    "total": 10
+  }
