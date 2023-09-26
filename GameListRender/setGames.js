@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
         //   1.- Creamos un elemento <div> para cada videojuego
         const gridItem = document.createElement("div");
         //   2.- Agregamos la clase "grid-item" al div que contiene el nombre del videojuego y su información
-        gridItem.classList.add("grid-item");
+        gridItem.classList.add("grid-item");  
         //    3.- Agregamos una etiqueta h4 con el texto del título a nuestro nuevo elemento <div>.
-        gridItem.innerHTML = `<h4>${videojuego.nombre}</h4>`;
+        gridItem.innerHTML = `<h4>${videojuego.nombre}</h4>` + `<h5>${videojuego.descripcion}</h5>`;
   
         gridItem.addEventListener("click", () => {
           mostrarDetallesVideojuego(videojuego);
         });
-  
+        
         gridVideojuegos.appendChild(gridItem);
       });
     }
@@ -26,5 +26,5 @@ document.addEventListener("DOMContentLoaded", () => {
   
   function mostrarDetallesVideojuego(videojuego) {
     // Redireccionar a otra página para mostrar los detalles
-    window.location.href = `videojuego.html?id=${videojuego.id}`;
+    window.location.href = `videojuego.html?id=${videojuego.id}`; 
   }

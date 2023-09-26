@@ -23,6 +23,14 @@ body {
     gap: 20px;
     padding: 20px;
   }
+
+   
+  .grid-item img{
+    opacity: 0.5;
+  }
+
+
+  
   
   .grid-item {
     background-color: #fff;

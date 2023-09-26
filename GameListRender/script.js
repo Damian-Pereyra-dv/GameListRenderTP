@@ -18,10 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const contenedorDetallesVideojuego = document.createElement("div");
       contenedorDetallesVideojuego.classList.add("detalles-videojuego");
       contenedorDetallesVideojuego.innerHTML = `
-      <h2>${videojuegoSeleccionado.nombre}</h2>
-      <p>ID: ${videojuegoSeleccionado.id}</p>
+      <h2>${videojuegoSeleccionado.nombre}</h2> <p>ID: ${videojuegoSeleccionado.id}</p>
       <p>Género: ${videojuegoSeleccionado.genero}</p>
       <p>Plataforma: ${videojuegoSeleccionado.plataforma}</p>
+      <p>${videojuegoSeleccionado.descripcion}</p>
+      <p>${videojuegoSeleccionado.fulldescripcion}</p>
       <img src="${videojuegoSeleccionado.imagen}" alt="${videojuegoSeleccionado.nombre}" />
       `;
       // Agregar al página principal

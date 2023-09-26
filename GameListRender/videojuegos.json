@@ -1,11 +1,13 @@
 {
-    "cantidad": 10,
+    "cantidad": 11,
     "videojuegos": [
       {
         "id": "1",
         "nombre": "The Legend of Zelda: Breath of the Wild",
         "genero": "Aventura",
         "plataforma": "Nintendo Switch",
+        "descripcion": "juego de aventura",
+        "fulldescripcion": " ajfbausd oahsodas ohasdonasd oahsdousahda iashdoashd iashdoashd oahsdousahd",
         "imagen": "https://onlygames.com.ar/wp-content/uploads/2022/03/the-legend-of-zelda-breath-of-the-wild-switch-hero.jpg"
       },
       {
@@ -13,13 +15,17 @@
         "nombre": "Red Dead Redemption 2",
         "genero": "Acción y Aventura",
         "plataforma": "PlayStation 4",
-        "imagen": "https://www.rockstargames.com/reddeadredemption2/assets/img/home/screenshot_01.jpg"
+        "descripcion": "juego de aventura",
+        "fulldescripcion": " ajfbausd oahsodas ohasdonasd oahsdousahda iashdoashd iashdoashd oahsdousahd",
+        "imagen": "https://i.blogs.es/41c79d/rdr2_officialart2_desktop/1366_2000.jpeg"
       },
       {
         "id": "3",
         "nombre": "The Witcher 3: Wild Hunt",
         "genero": "Rol",
         "plataforma": "PC",
+        "descripcion": "juego de aventura",
+        "fulldescripcion": " ajfbausd oahsodas ohasdonasd oahsdousahda iashdoashd iashdoashd oahsdousahd",
         "imagen": "https://thewitcher.com/assets/img/home/screenshot_01.jpg"
       },
       {
@@ -27,6 +33,8 @@
         "nombre": "Super Mario Odyssey",
         "genero": "Plataformas",
         "plataforma": "Nintendo Switch",
+        "descripcion": "juego de aventura",
+        "fulldescripcion": " ajfbausd oahsodas ohasdonasd oahsdousahda iashdoashd iashdoashd oahsdousahd",
         "imagen": "https://www.nintendo.com/games/detail/super-mario-odyssey-switch/"
       },
       {
@@ -34,6 +42,8 @@
         "nombre": "Dark Souls III",
         "genero": "Acción y Rol",
         "plataforma": "Xbox One",
+        "descripcion": "juego de aventura",
+        "fulldescripcion": " ajfbausd oahsodas ohasdonasd oahsdousahda iashdoashd iashdoashd oahsdousahd",
         "imagen": "https://www.darksouls.jp/assets/img/home/screenshot_01.jpg"
       },
       {
@@ -41,6 +51,8 @@
         "nombre": "Minecraft",
         "genero": "Sandbox",
         "plataforma": "PC",
+        "descripcion": "juego de aventura",
+        "fulldescripcion": " ajfbausd oahsodas ohasdonasd oahsdousahda iashdoashd iashdoashd oahsdousahd",
         "imagen": "https://www.minecraft.net/es-es/assets/img/home/screenshot_01.jpg"
       },
       {
@@ -48,6 +60,8 @@
         "nombre": "Grand Theft Auto V",
         "genero": "Acción y Aventura",
         "plataforma": "PlayStation 5",
+        "descripcion": "juego de aventura",
+        "fulldescripcion": " ajfbausd oahsodas ohasdonasd oahsdousahda iashdoashd iashdoashd oahsdousahd",
         "imagen": "https://www.rockstargames.com/grandtheftautov/assets/img/home/screenshot_01.jpg"
       },
       {
@@ -55,6 +69,8 @@
         "nombre": "Fortnite",
         "genero": "Battle Royale",
         "plataforma": "Xbox Series X",
+        "descripcion": "juego de aventura",
+        "fulldescripcion": " ajfbausd oahsodas ohasdonasd oahsdousahda iashdoashd iashdoashd oahsdousahd",
         "imagen": "https://www.epicgames.com/fortnite/es-ES/home/"
       },
       {
@@ -62,6 +78,8 @@
         "nombre": "Cyberpunk 2077",
         "genero": "Rol",
         "plataforma": "PC",
+        "descripcion": "juego de aventura",
+        "fulldescripcion": " ajfbausd oahsodas ohasdonasd oahsdousahda iashdoashd iashdoashd oahsdousahd",
         "imagen": "https://www.cyberpunk.net/es/assets/img/home/screenshot_01.jpg"
       },
       {
@@ -69,8 +87,19 @@
         "nombre": "Animal Crossing: New Horizons",
         "genero": "Simulación",
         "plataforma": "Nintendo Switch",
+        "descripcion": "juego de aventura",
+        "fulldescripcion": " ajfbausd oahsodas ohasdonasd oahsdousahda iashdoashd iashdoashd oahsdousahd",
+        "imagen": "https://www.nintendo.com/games/detail/animal-crossing-new-horizons-switch/"
+      },
+      {
+        "id": "11",
+        "nombre": "Resident Evil",
+        "genero": "Simulación",
+        "plataforma": "Nintendo Switch",
+        "descripcion": "juego de aventura",
+        "fulldescripcion": " ajfbausd oahsodas ohasdonasd oahsdousahda iashdoashd iashdoashd oahsdousahd",
         "imagen": "https://www.nintendo.com/games/detail/animal-crossing-new-horizons-switch/"
       }
     ],
-    "total": 10
+    "total": 11
   }
