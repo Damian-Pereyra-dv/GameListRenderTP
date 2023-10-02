@@ -1,30 +1,46 @@
-fetch("./videojuegos.json")
-  .then((respuesta) => respuesta.json())
-  .then((datos) => localStorage.setItem("videojuegos", JSON.stringify(datos)));
-
 document.addEventListener("DOMContentLoaded", () => {
-    const gridVideojuegos = document.getElementById("grid-videojuegos");
-    const datosVideojuegos = JSON.parse(localStorage.getItem("videojuegos"));
-    console.log(datosVideojuegos);
-    if (datosVideojuegos) {
-      datosVideojuegos.videojuegos.forEach((videojuego) => {
-        //   1.- Creamos un elemento <div> para cada videojuego
-        const gridItem = document.createElement("div");
-        //   2.- Agregamos la clase "grid-item" al div que contiene el nombre del videojuego y su información
-        gridItem.classList.add("grid-item");  
-        //    3.- Agregamos una etiqueta h4 con el texto del título a nuestro nuevo elemento <div>.
-        gridItem.innerHTML = `<h4>${videojuego.nombre}</h4>` + `<h5>${videojuego.descripcion}</h5>`;
-  
-        gridItem.addEventListener("click", () => {
-          mostrarDetallesVideojuego(videojuego);
-        });
-        
-        gridVideojuegos.appendChild(gridItem);
+  const gridVideojuegos = document.getElementById("grid-videojuegos");
+  const datosVideojuegos = JSON.parse(localStorage.getItem("videojuegos"));
+
+  function mostrarVideojuegos(videojuegos) {
+    gridVideojuegos.innerHTML = ""; // Limpiamos el contenido actual
+    videojuegos.forEach((videojuego) => {
+      const gridItem = document.createElement("div");
+      gridItem.classList.add("grid-item");
+      gridItem.style.backgroundImage = `url(${videojuego.imagen})`;
+      gridItem.style.backgroundPosition = "center center";
+      gridItem.style.backgroundSize = "cover";
+
+      gridItem.innerHTML = `<div class="container text-center">
+        <div class="row row-cols-1">
+          <div class="col"><b>${videojuego.nombre}</b> <br> <p>${videojuego.descripcion}</p></div>
+        </div>
+      </div>`;
+
+      gridItem.addEventListener("click", () => {
+        mostrarDetallesVideojuego(videojuego);
       });
-    }
-  });
-  
-  function mostrarDetallesVideojuego(videojuego) {
-    // Redireccionar a otra página para mostrar los detalles
-    window.location.href = `videojuego.html?id=${videojuego.id}`; 
+
+      gridVideojuegos.appendChild(gridItem);
+    });
   }
+
+  if (datosVideojuegos) {
+    mostrarVideojuegos(datosVideojuegos.videojuegos);
+  }
+
+  // Agregar un evento de escucha al campo de búsqueda
+  const inputBusqueda = document.querySelector('input[type="search"]');
+  inputBusqueda.addEventListener("input", () => {
+    const terminoBusqueda = inputBusqueda.value.toLowerCase();
+    const videojuegosFiltrados = datosVideojuegos.videojuegos.filter((videojuego) =>
+      videojuego.nombre.toLowerCase().includes(terminoBusqueda)
+    );
+    mostrarVideojuegos(videojuegosFiltrados);
+  });
+
+  function mostrarDetallesVideojuego(videojuego) {
+    window.location.href = `videojuegos.html?id=${videojuego.id}`;
+  }
+  
+});
